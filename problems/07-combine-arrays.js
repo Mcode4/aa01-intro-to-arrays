@@ -6,6 +6,9 @@ array's elements. Research and use the Array.concat method on MDN.
 */
 
 // Your code here 
+function combineArrays(arr, arr2){
+    return arr.concat(arr2)
+}
 
 
 // console.log(combineArrays([1, 2], [3, 4]));       // => [1, 2, 3, 4]

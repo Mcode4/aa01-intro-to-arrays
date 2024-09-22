@@ -5,6 +5,16 @@ is empty, it should return null.
 */
 
 // Your code here 
+function avgVal(arr){
+    if (!arr.length) return null
+    
+    let sum = 0
+
+    for(let i=0; i< arr.length; i++){
+        sum += arr[i]
+    }
+    return sum / arr.length
+}
 
 
 // console.log(avgVal([5, 10]));         // 7.5

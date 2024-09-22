@@ -6,9 +6,12 @@ should return the difference between the first and last elements of the array.
 */
 
 // Your code here 
+function firstAndLast(arr){
+    return arr.length % 2===0 ? arr[0] + arr[arr.length-1] : arr[0] - arr[arr.length-1]
+}
 
 
-// console.log(firstAndLast([1, 2, 3, 4]));    // 5
+console.log(firstAndLast([1, 2, 3, 4]));    // 5
 // console.log(firstAndLast([1, 2, 3, 4, 5])); // -4
 // console.log(firstAndLast([12, 5]));         // 17
 // console.log(firstAndLast([12]));            // 0

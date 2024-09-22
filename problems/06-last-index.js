@@ -5,6 +5,15 @@ array.  If no character exists in the array, return -1.
 */
 
 // Your code here 
+function lastIndex(arr, char){
+    for(let i = arr.length-1; i>= 0 ; i--){
+        let arrChar = arr[i]
+        if(arrChar === char){
+            return i
+        }
+    }
+    return -1
+}
 
 
 // console.log(lastIndex(["a", "b", "c", "a"], "a"));

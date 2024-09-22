@@ -5,6 +5,18 @@ array is empty, the function should return null.
 */
 
 // Your code here 
+function maxVal(arr){
+    if (!arr.length) return null
+    
+    let max = 0
+
+    for(let i=0; i< arr.length; i++){
+        if(max < arr[i]){
+            max = arr[i]
+        }
+    }
+    return max
+}
 
 
 // console.log(maxVal([4, 6, 3, 5, 42, 4])); // 42

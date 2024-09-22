@@ -7,6 +7,15 @@ this using a loop.
 */
 
 // Your code here 
+function getIndexOf(arr, target){
+    for(let i = 0; i< arr.length; i++){
+        let arrChar = arr[i]
+        if(arrChar === target){
+            return i
+        }
+    }
+    return -1
+}
 
 
 // console.log(getIndexOf(['a', 'b', 'c', 'e'], 'c')); // 2
